@@ -1,0 +1,24 @@
+<div [ngSwitch]="expirience.length > 0">
+  <ng-container *ngSwitchCase="true">
+    <h3>Experience</h3>
+    <ul>
+      <li *ngFor="let item of expirience"><span *ngIf="item !== 'qwerty'">{{ item }}</span></li>
+      <li *ngIf="budget > 0">Successfully managed {{budget | currency:'UAH':'symbol-narrow':'1.0-0'}} million progect.</li>
+      <li>Reviewed constantly the customer feedback and then suggested ways to improve the processes and customer service levels which increased the satisfaction rate from
+        {{satisfactionFrom | percent}} to {{satisfactionTo | percent}}.</li>
+    </ul>
+
+  </ng-container>
+  <ng-container *ngSwitchCase="false">
+    <p>No experience</p>
+  </ng-container>
+</div>
+
+
+
+<!--<ng-template [ngIf]="expirience.length > 0">-->
+<!--  <h3>Experience</h3>-->
+<!--  <ul>-->
+<!--    <li *ngFor="let item of expirience">{{item}}</li>-->
+<!--  </ul>-->
+<!--</ng-template>-->

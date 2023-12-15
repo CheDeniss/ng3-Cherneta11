@@ -1,0 +1,25 @@
+.resume-container {
+  background: #bdcca0;
+  border: 2px solid #1c1b1b;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  width: 50%;
+  padding: 25px;
+  font-family: "Roboto Light", sans-serif;
+}
+
+.title-name {
+  color: navy;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 150px;
+  aspect-ratio: 1/1;
+}

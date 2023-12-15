@@ -1,0 +1,18 @@
+<ng-template [ngIf]="fullName !== ''">
+  <div class="resume-container">
+    <div class="head">
+      <h1 class="title-name">{{fullName | uppercase}}</h1>
+      <img src="../assets/istockphoto-1176307094-1024x1024.jpg" alt="Photo"></div>
+    <hr>
+    <ul>
+      <li><strong>City:</strong> {{city}}</li>
+      <li><strong>Phone:</strong> {{phone}}</li>
+    </ul>
+    <hr>
+    <app-experience/>
+    <hr>
+    <app-skills/>
+    <hr>
+    <app-links/>
+  </div>
+</ng-template>
